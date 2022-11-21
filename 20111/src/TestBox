@@ -1,0 +1,35 @@
+class Box {
+	int width, length, height;
+	
+	Box(){
+		
+	}
+	Box(int w, int t){
+		width = w;
+		length = t;		
+	}
+	
+	Box(int w, int t, int h){
+		width = w;
+		length = t;		
+		height = h;
+	}
+	void countBox() {
+		System.out.println("넓이 = "+width * length+",부피 = "+width * length * height);
+	}
+	
+}
+public class TestBox {
+
+	public static void main(String[] args) {
+		System.out.println("square1상자 계산");
+		Box square1 = new Box(4,44);
+		square1.countBox();
+		
+		System.out.println("square2상자 계산");
+		Box square2 = new Box(4,34,7);
+		square2.countBox();
+
+	}
+
+}
