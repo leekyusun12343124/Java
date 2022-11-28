@@ -1,0 +1,36 @@
+class Date {
+	int year, day;
+	String month;
+
+Date() {
+	this(1900, "1월", 1); // 객체의 생성자 this() 사용- 전체조건: 미리 초기화되어 있어야 한다.
+}
+
+Date(int year){
+	this(year, "1월", 1);
+}
+
+Date(int year, String month, int day) {
+	this.year = year;
+	this.day = day;
+	this.month = month;
+   }
+
+public String toString() {
+	return "Date[year=" + year + ", month=" +  month  +", day=" +  day + "]";
+    }
+}
+public class DateConst {
+
+	public static void main(String[] args) {
+		Date date1=new Date(2022, "11월", 22);
+		Date date2=new Date(2022);
+		Date date3=new Date();
+		
+		System.out.println(date1);
+		System.out.println(date2);
+		System.out.println(date3);
+
+	}
+
+}
