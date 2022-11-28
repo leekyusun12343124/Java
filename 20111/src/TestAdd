@@ -1,0 +1,30 @@
+class Add {
+	
+	int a, b, c, sum;
+	double d, e;
+	
+	void sum(int a, int b) {
+		System.out.println(a+b);
+	}
+	
+	void sum(int a, int b, int c) {
+		System.out.println(a+b+c);
+	}
+	
+	void sum(double d, double e) {
+		System.out.println(e+d);
+	}
+	
+	
+}
+
+public class TestAdd {
+
+	public static void main(String[] args) {
+		Add obj1 = new Add();
+		obj1.sum(7,7);
+		obj1.sum(7,7,7);
+		obj1.sum(0.7,0.7);
+	}
+
+}
