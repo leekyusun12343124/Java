@@ -1,0 +1,26 @@
+class SquareMO {
+	
+	SquareMO(){}
+	
+	void countBox(int w, int l){
+		System.out.print("square1 넓이 :"+w*l);
+	}
+	
+    void countBox(int w, int l, int h){
+    	
+    	System.out.print("square1 넓이 :"+w*l);
+    	System.out.println("square1 부피 :"+w*l*h);
+	}
+}
+public class TestSquareMO {
+
+	public static void main(String[] args) {
+		
+		SquareMO square1 = new SquareMO();
+		
+		square1.countBox(4, 44);
+		square1.countBox(4, 34, 7);
+
+	}
+
+}
