@@ -1,0 +1,29 @@
+class Car {
+	protected static int number = 0;
+	private int id;
+	private String model;
+	private String color;
+	private int speed;
+	
+	public Car(String mode1, String color, int speed) {
+		this.color = color;
+		this.speed = speed;
+		this.model = model;
+		id = ++number;
+		
+		
+	}
+}
+public class CarTest {
+
+	public static void main(String[] args) {
+		
+		Car car1 = new Car("S600","white",80);
+		Car car2 = new Car("E500","blue",20);
+		Car car3 = new Car("G90","red",300);
+		
+		int n = Car.number;
+		System.out.println("지금까지 생성된 자동차 수 = "+ n);
+	}
+
+}
