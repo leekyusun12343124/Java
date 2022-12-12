@@ -1,0 +1,32 @@
+class Student{
+	static String school = "인천정보과학고";
+	String name;
+	int grade;
+	
+	Student(String name, int grade) {
+		this.name = name;
+		this.grade = grade;
+		
+	}
+	void showPrint() {
+		System.out.println("Student의school:"+ school +", name=" + name + ",grade=" + grade);
+	}
+	
+}
+public class StudentTest {
+
+	public static void main(String[] args) {
+		
+		Student kim = new Student("이규선",2);
+		kim.name = "장인태";
+		kim.school = "인천정보과학고";
+		Student.school = "선림인터넷고";
+		kim.showPrint();
+		Student jang = new Student("홍길동",1);
+		jang.showPrint();
+		Student bak = new Student("나자바",3);
+		bak.showPrint();
+
+	}
+
+}
