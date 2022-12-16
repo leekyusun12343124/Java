@@ -20,7 +20,6 @@ public class CarTest {
 		
 		Car car1 = new Car("S600","white",80);
 		Car car2 = new Car("E500","blue",20);
-		Car car3 = new Car("G90","red",300);
 		
 		int n = Car.number;
 		System.out.println("지금까지 생성된 자동차 수 = "+ n);
